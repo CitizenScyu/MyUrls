@@ -80,7 +80,7 @@ func main() {
 	router.LoadHTMLGlob("public/*.html")
 
 	port := flag.Int("port", defaultPort, "服务端口")
-	domain := flag.String("domain", "", "短链接域名，必填项")
+	domain := flag.String("domain", "ss.dxdyzh.tk", "短链接域名，必填项")
 	ttl := flag.Int("ttl", defaultExpire, "短链接有效期，单位(天)，默认180天。")
 	conn := flag.String("conn", defaultRedisConfig, "Redis连接，格式: host:port")
 	passwd := flag.String("passwd", "", "Redis连接密码")
